@@ -53,6 +53,6 @@
 
 document.querySelectorAll(".logo").forEach(
   addEventListener("click", function () {
-    location.href = "./index.html";
+    location.href = "index.html";
   })
 );
