@@ -51,8 +51,8 @@
   });
 })();
 
-document.querySelectorAll(".logo").forEach(
-  addEventListener("click", function () {
-    location.href = "index.html";
-  })
-);
+// document.querySelectorAll(".logo").forEach(
+//   addEventListener("click", function () {
+//     location.href = "index.html";
+//   })
+// );
