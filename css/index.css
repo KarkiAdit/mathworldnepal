@@ -54,7 +54,7 @@ section.video-introduction {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/bg__with-dotted.svg");
+  background-image: url(../images/bg__with-dotted.svg);
   /* background-repeat: no-repeat; */
   /* background-position: bottom; */
   background-size: contain;
