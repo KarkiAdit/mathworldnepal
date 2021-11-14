@@ -1,0 +1,344 @@
+section {
+  width: 100%;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+section h2 {
+  color: var(--color-header);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+section p {
+  text-align: center;
+  margin: 1rem;
+  color: #3c3c3c;
+  overflow: hidden;
+}
+section button {
+  display: block;
+  margin: 2rem auto;
+}
+section.main {
+  height: 100vh;
+  min-height: 40rem;
+  color: var(--color-header);
+  clip-path: ellipse(100vmax 100% at 50% 0%);
+
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.main header .title-text {
+  font-size: 2rem;
+  text-align: center;
+}
+section.main header p {
+  color: var(--color-header);
+  font-size: 1.2rem;
+  margin: 1rem 2rem 2rem 2rem;
+}
+section.main button {
+  display: none;
+}
+section.main img {
+  display: block;
+  margin: auto;
+  width: 100vmin;
+  max-width: 35rem;
+}
+
+section.video-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bg__with-dotted.svg);
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom; */
+  background-size: contain;
+  /* background: url("/images/blue-diamond.svg"); */
+}
+.video-introduction > iframe {
+  width: 100%;
+  height: min(90vh, 56vw);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  border: 40px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+section.topical-courses {
+  background-color: var(--bg-color-second);
+  overflow: visible;
+}
+
+section span {
+  font-weight: bold;
+}
+section.topical-courses a {
+  color: inherit;
+}
+section.topical-courses a:hover {
+  background: #ffffff65;
+}
+.courses-image {
+  width: 15rem;
+  height: 23rem;
+  margin: 4rem auto -8rem auto;
+
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+  grid-gap: 1rem;
+}
+.card {
+  font-size: 0.5rem;
+  background-color: var(--bg-color-second);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 2rem -1rem;
+  height: 100%;
+}
+.card img {
+  width: 100%;
+}
+.card h6 {
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.card ul {
+  color: black;
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-left: 0.5rem;
+}
+
+section.recent {
+  overflow: visible;
+}
+.recent-image {
+  width: 18rem;
+  height: 20rem;
+  margin: 4rem auto -20rem auto;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 1rem;
+}
+.variant-card {
+  height: 39%;
+  font-size: 0.5rem;
+  background-color: var(--bg-color-second);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 2rem -1rem;
+}
+
+.variant-card img,
+.variant-card video {
+  width: 100%;
+}
+.variant-card h6 {
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+section.blogs {
+  background-color: var(--bg-color-second);
+}
+section.blogs button {
+  width: 17rem;
+  background-color: var(--color-header);
+}
+
+.blog-card {
+  margin: auto;
+  width: 22rem;
+  height: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.5rem -0.5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.blog-card > img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+.blog-card h4 {
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.blog-card p {
+  flex: 4rem 1 0;
+
+  margin: 0.5rem 1rem;
+  text-align: left;
+  font-size: 0.9em;
+}
+.blog-card .author-details {
+  height: 2rem;
+  margin: 1rem 0;
+
+  font-size: 0.76em;
+  color: #777;
+
+  display: grid;
+  grid-template: 1fr 1fr / 3rem auto;
+}
+.blog-card .author-details .profile-pic {
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+}
+.blog-card .author-details .author-name {
+  font-weight: bold;
+  color: var(--color-header);
+}
+.blog-card .author-details .publish-date {
+  font-weight: bold;
+}
+section.contact {
+  background-image: url(contact-bg.jpeg);
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-template {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(119, 108, 108, 0.7);
+}
+
+section.contact button,
+section.contact p,
+section.contact h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+@media screen and (min-width: 770px) {
+  section {
+    padding: 7rem 10vw;
+  }
+  section > h2 {
+    color: var(--color-header);
+    font-size: 2rem;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  section > p {
+    text-align: left;
+    margin: 0rem;
+    width: 50%;
+  }
+  section button {
+    display: block;
+    margin: 3rem 0;
+  }
+  section.main {
+    display: grid;
+    grid-template: 1fr 1fr/ 60%;
+    margin-right: 0;
+    position: relative;
+  }
+  section.main header {
+    align-self: center;
+  }
+  section.main header .title-text {
+    text-align: left;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    width: 95%;
+  }
+  section.main header p {
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 0;
+    width: 90%;
+  }
+  section.main button {
+    display: unset;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+  section.main img {
+    position: absolute;
+    z-index: -1;
+    bottom: 2rem;
+    right: 0;
+    width: 45%;
+  }
+
+  .courses-image {
+    width: 18rem;
+    height: 27rem;
+    margin: -20rem 0 -12rem auto;
+  }
+
+  .card {
+    font-size: 0.65rem;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card h6 {
+    font-size: 0.8rem;
+  }
+  .recent p,
+  .recent h2,
+  .recent button {
+    margin-left: auto;
+  }
+  .variant-card {
+    height: 46%;
+  }
+  .recent-image {
+    margin: -20rem auto -12rem 0;
+    width: 18rem;
+    height: 27rem;
+    flex-direction: column;
+  }
+
+  .recent-image h6 {
+    font-size: 0.9rem;
+  }
+
+  section.video-lectures > h2,
+  section.video-lectures > p {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  section.blogs {
+    background-color: var(--bg-color-second);
+  }
+  section.blogs button {
+    width: 100%;
+  }
+
+  section.contact p,
+  section.contact h2 {
+    width: 100%;
+    text-align: center;
+  }
+  section.contact button {
+    margin-left: 45%;
+  }
+}

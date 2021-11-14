@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  --bg-color-body: #fafafa;
+  --bg-color-second: #e7ebf1;
+  --color-accent: #f88c1a;
+  --color-header: #113257;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color-body);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none !important;
+}
+
+#nav-bar {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid #dedede;
+  background-color: #fafafabb;
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#nav-bar > * {
+  margin-right: 1rem;
+}
+#nav-bar > *:last-child {
+  margin-right: 0;
+}
+.logo {
+  cursor: pointer;
+}
+#nav-bar .logo {
+  height: 100%;
+  margin-right: auto;
+}
+#nav-bar .logo img {
+  height: 100%;
+}
+#nav-bar .search-bar input {
+  display: none;
+  background-color: #e7ebf1;
+  height: 1.7rem;
+  width: 100%;
+  border: unset;
+  padding: 0 0.5em;
+  font: inherit;
+}
+#nav-bar .search-bar .icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+#nav-bar .search-bar input::placeholder {
+  color: var(--color-header);
+}
+
+#nav-bar nav.hidden {
+  clip-path: circle(0 at 90% -1rem);
+}
+#nav-bar nav {
+  display: block;
+  clip-path: circle(110vh at 90% -1rem);
+  margin: 3rem 0 0 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  height: 100vh;
+  z-index: 5;
+  background-color: #dedede;
+  opacity: 0.9;
+  transition: clip-path 0.1s ease-in-out;
+}
+#nav-bar nav ul {
+  width: 100%;
+  list-style: none;
+}
+#nav-bar nav ul li {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: right;
+}
+#nav-bar nav ul li a {
+  display: block;
+  text-decoration: none;
+  font: inherit;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+#nav-bar nav ul li a:hover {
+  background: #ffffff65;
+}
+
+#account-login {
+  cursor: pointer;
+}
+#account-login::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background-image: url(../images/user-circle-icon.svg);
+  background-position: center;
+  background-size: contain;
+}
+#account-login > button {
+  display: none;
+  padding: 0.2em 0.5em;
+}
+#nav-bar .icon {
+  cursor: pointer;
+}
+
+/*  Math World title text style*/
+.title-text {
+  color: var(--color-header);
+  font-weight: bold;
+}
+.title-text .math {
+  color: var(--color-accent);
+}
+
+/*   Icons any <i> having icon class*/
+i.icon {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+i.icon.search-icon {
+  background-image: url(../images/search-icon.svg);
+}
+i.icon.hamburger-icon {
+  background-image: url(../images/hamburger-icon.svg);
+}
+i.icon.hamburger-icon.active {
+  /*image changes to cross when active*/
+  background-image: url(../images/close_big.svg);
+}
+
+/* Buttons  */
+button,
+.button {
+  font: inherit;
+  font-weight: bold;
+  padding: 0.5em;
+  border: unset;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+button.disabled,
+.button.disabled {
+  filter: saturate(0.1);
+}
+
+button.primary-button,
+.button.primary-button {
+  color: white;
+  background-color: var(--color-accent);
+}
+button.primary-button:hover,
+.button.primary-button:hover {
+  filter: brightness(0.95);
+}
+
+button.secondary-button,
+.button.secondary-button {
+  color: var(--color-accent);
+  background: transparent;
+}
+button.secondary-button:hover,
+.button.secondary-button:hover {
+  text-decoration: underline;
+}
+
+/* footer  */
+.page-footer {
+  display: grid;
+  grid:
+    "logo report" 2rem
+    "logo nav" 2rem
+    "copyright copyright" 2rem
+    / 4rem auto;
+  align-items: center;
+
+  padding: 1rem;
+  background-color: white;
+  font-size: 0.8rem;
+}
+.page-footer > .logo {
+  grid-area: logo;
+}
+.page-footer > .logo > img {
+  width: 100%;
+}
+.page-footer > .report-message {
+  grid-area: report;
+  color: #818181;
+}
+.page-footer > .report-message a {
+  color: #363636;
+  text-decoration: underline;
+}
+
+.page-footer > nav {
+  grid-area: nav;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.page-footer > nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-footer .page-links {
+  flex-basis: 20rem;
+  margin-right: 2rem;
+}
+.page-footer .social-links {
+  flex-basis: 12rem;
+}
+
+.social-links .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+}
+.icon.facebook {
+  object-position: 0% 0%;
+}
+.icon.discord {
+  object-position: 25% 0%;
+}
+.icon.youtube {
+  object-position: 50% 0%;
+}
+.icon.instagram {
+  object-position: 75% 0%;
+}
+.icon.linkedin {
+  object-position: 100% 0%;
+}
+
+.page-footer > .copyright-text {
+  grid-area: copyright;
+  text-align: center;
+
+  color: #808080;
+}
+
+@media screen and (min-width: 425px) {
+  #nav-bar .search-bar {
+    flex: 1 0 6rem;
+    max-width: 12rem;
+    position: relative;
+  }
+  #nav-bar .search-bar input {
+    display: unset;
+  }
+  #nav-bar .search-bar .icon {
+    height: 1.5rem;
+    position: absolute;
+    top: 0.1rem;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1077px) {
+  #nav-bar {
+    height: 5rem;
+    font-size: 0.9rem;
+
+    justify-content: space-between;
+  }
+  #nav-bar .logo {
+    max-height: 100%;
+    margin-right: 0.5rem;
+  }
+  #nav-bar .logo img {
+    height: 100%;
+  }
+
+  #nav-bar nav.hidden {
+    clip-path: unset;
+  }
+  #nav-bar nav {
+    margin: 0 1rem;
+    clip-path: unset;
+    position: static;
+    width: unset;
+    height: unset;
+    z-index: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  #nav-bar nav ul {
+    width: unset;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav-bar nav ul li {
+    width: unset;
+    height: unset;
+    line-height: unset;
+    text-align: left;
+    margin: 0 0.5rem;
+  }
+  #nav-bar nav ul li a {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  #nav-bar nav ul li a:hover {
+    background: transparent;
+    text-decoration: underline;
+  }
+
+  #account-login {
+    cursor: default;
+  }
+  #account-login::before {
+    display: none;
+  }
+  #account-login > button {
+    display: unset;
+  }
+  #nav-bar .icon.hamburger-icon {
+    display: none;
+  }
+
+  .page-footer {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .page-footer .social-links .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  #nav-bar {
+    padding: 0 10vw;
+  }
+}
