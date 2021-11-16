@@ -67,7 +67,7 @@ for (counter = 0; counter < targetted_videos.length; counter++) {
   );
   targetted_videos[counter].load();
 
-  targetted_videos[counter].addEventListener("click", (event) => {
+  targetted_videos[counter].addEventListener("canplaythrough", (event) => {
     targetted_videos[counter].play();
     console.log({
       src: source.getAttribute("src"),
