@@ -146,8 +146,7 @@ address {
       "footer thumbnail";
   }
 }
-@media screen and (min-width: 425px) {
-}
+
 @media screen and (min-width: 780px) {
   main {
     padding-top: 7rem;
