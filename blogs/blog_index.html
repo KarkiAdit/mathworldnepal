@@ -29,7 +29,7 @@
       href="../images/footer-image.png"
       type="image/x-icon"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
     <script src="../script/style.js" defer></script>
   </head>
   <body>
@@ -73,7 +73,7 @@
             >The Aesthetic Beauty of Mathematics: Golden Ratio</a
           >
         </h3>
-        <p>
+        <p class="blog-para">
           Mathematics is beautiful because it’s able to interpret everything
           that the universe holds. And the golden ratio has added finesse to the
           world of mathematics. Hang on, before we start let’s know what golden
@@ -100,11 +100,16 @@
         <h3>
           <a href="blog-2.html" alt="">Are there a couple of universes?</a>
         </h3>
-        <p>
+        <p class="blog-para">
           Isn’t one vast, historic, and mysterious universe isn’t sufficient for
           you? Well, because it happens, there are others. Among physicists,
           it’s now no longer controversial. Our universe is, however, one in an
-          unimaginably huge ocean of universes known as the multiverse.
+          unimaginably huge ocean of universes known as the multiverse. If that
+          idea isn’t sufficient to get your head around, physics describes
+          distinctive varieties of the multiverse. The simplest one to recognize
+          is known as the cosmological multiverse. The concept right here is
+          that the universe extended at a mind-boggling pace within a fraction
+          of a 2nd after the huge bang.
         </p>
         <footer class="author">
           <address>Ranjan Sharma</address>
@@ -155,7 +160,11 @@
             ><img src="../images/blog/blog5_image1.png" alt=""
           /></a>
         </div>
-        <h3><a href="blog-5.html" alt="">Have you ever wondered?</a></h3>
+        <h3>
+          <a href="blog-5.html" alt=""
+            >Have you ever wondered how geometry got invented?</a
+          >
+        </h3>
         <footer class="author">
           <address>Amit Chauthary</address>
           <span>on</span>
@@ -188,7 +197,11 @@
             ><img src="../images/blog/blog7_image3.jpg" alt=""
           /></a>
         </div>
-        <h3><a href="blog-7.html" alt=""> Sleep and Quality of Life</a></h3>
+        <h3>
+          <a href="blog-7.html" alt="">
+            Sleep and Quality of Life: How are they interlinked?</a
+          >
+        </h3>
         <footer class="author">
           <address>Bardan Dhakal</address>
           <span>on</span>
@@ -280,5 +293,18 @@
         >Copyright &copy; All rights reserved to Math World Nepal</span
       >
     </footer>
+    <script>
+      document
+        .getElementsByClassName("blog-para")[0]
+        .addEventListener("click", function () {
+          location.href = "blog-1.html";
+        });
+
+      document
+        .getElementsByClassName("blog-para")[1]
+        .addEventListener("click", function () {
+          location.href = "blog-2.html";
+        });
+    </script>
   </body>
 </html>
