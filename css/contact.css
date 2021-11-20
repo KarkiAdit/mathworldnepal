@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  margin: 4rem 2rem;
+  margin: 4rem 2rem 0 2rem;
 }
 .form-section,
 .contact-section {
@@ -23,10 +23,7 @@
   padding: 2rem 4rem;
   border-radius: 20px;
 }
-/* .contact-section img {
-  width: 100%;
-  flex-grow: 1;
-} */
+
 h2 {
   margin: 2rem 0;
 }
