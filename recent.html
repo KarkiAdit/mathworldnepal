@@ -20,9 +20,7 @@
       content="Olympiad Courses, Blogs, Math News, Research Articles, YouTube, Contact, Learn more"
     />
     <meta name="author" content="Math World Nepal" />
-    <title>Math World Nepal</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+
     <link
       rel="shortcut icon"
       href="./images/footer-image.png"
@@ -34,6 +32,9 @@
   </head>
   <body>
     <div class="uc__wrapper">
+      <div class="uc__art">
+        <img src="images/under_construction.svg" alt="" />
+      </div>
       <div class="uc__details">
         <h1 class="title">Coming Soon!</h1>
         <h3 class="intro">
@@ -49,26 +50,24 @@
             <form action="#">
               <input type="email" class="email" placeholder="Email Address.." />
               <input
-                type="submit"
+                type="button"
                 class="submit"
+                id="submit"
                 value="Get Notified"
-                onclick="confirmation()"
               />
             </form>
           </div>
         </div>
       </div>
-      <div class="uc__art">
-        <img src="images/under_construction.svg" alt="" />
-      </div>
     </div>
     <script>
-      function confirmation() {
+      document.getElementById("submit").addEventListener("click", function () {
         alert(
-          "We have received your email! Vist our other pages to learn more."
+          "We have received you email and hope to notify you very soon. Learn more about us by visiting other pages."
         );
+
         location.href = "index.html";
-      }
+      });
     </script>
   </body>
 </html>
