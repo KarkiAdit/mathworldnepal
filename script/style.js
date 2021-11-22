@@ -80,6 +80,6 @@ var elements = document.getElementsByClassName("logo");
 console.log(elements);
 for (counter = 0; counter < elements.length; counter++) {
   elements[counter].addEventListener("click", function () {
-    location.href = "/index.html";
+    location.href = "../index.html";
   });
 }
