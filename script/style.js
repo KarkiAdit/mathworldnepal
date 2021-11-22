@@ -94,10 +94,15 @@ function extract_first_six() {
 }
 
 var elements = document.getElementsByClassName("logo");
-
+console.log(page);
 for (counter = 0; counter < elements.length; counter++) {
   elements[counter].addEventListener("click", function () {
-    if (extract_first_four() == "blog" || extract_first_six() == "recent") {
+    if (page == "index.html") {
+      location.href = "#";
+    } else if (
+      extract_first_four() == "blog" ||
+      extract_first_six() == "recent"
+    ) {
       location.href = "../index.html";
     } else {
       location.href = "index.html";
