@@ -76,10 +76,31 @@ for (counter = 0; counter < targetted_videos.length; counter++) {
   });
 }
 
+var path = window.location.pathname;
+var page = path.split("/").pop();
+function extract_first_four() {
+  new_string = "";
+  for (i = 0; i < 4; i++) {
+    new_string = new_string + page.charAt(i);
+  }
+  return new_string;
+}
+function extract_first_six() {
+  new_string = "";
+  for (i = 0; i < 6; i++) {
+    new_string = new_string + page.charAt(i);
+  }
+  return new_string;
+}
+
 var elements = document.getElementsByClassName("logo");
-console.log(elements);
+
 for (counter = 0; counter < elements.length; counter++) {
   elements[counter].addEventListener("click", function () {
-    location.href = "../index.html";
+    if (extract_first_four() == "blog" || extract_first_six() == "recent") {
+      location.href = "../index.html";
+    } else {
+      location.href = "index.html";
+    }
   });
 }
