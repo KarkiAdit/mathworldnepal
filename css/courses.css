@@ -1,127 +1,156 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    font-size: 1rem;
-    line-height: 1.65;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #8e44ad 50%, #e9dbef 50%);
-    color: #fff;
+  font-size: 1rem;
+  line-height: 1.65;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #692d82 50%, #8e44ad 50%);
+  color: #fff;
 }
 
 /*Main Styles*/
 
 .uc__wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .uc__details {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 4rem;
-    align-items: flex-start;
-    justify-content: center;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .uc__art {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .uc__art img {
-    width: 70%;
+  width: 70%;
 }
 
 .title {
-    display: inline-block;
-    font-size: 40px;
-    position: relative;
-    margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
 .title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
-    background-color: #fff;
-    width: 140px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #fff;
+  width: 140px;
 }
 
 .intro {
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 
 .uc__description {
-    margin-bottom: 2rem;
-    line-height: 1.77;
-    color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.77;
+  color: #ccc;
 }
 
 .uc__subscribe {
-    background-color: #9b59b6;
-    padding: 1.5rem;
-    width: 85%;
-    border-radius: 3px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+  background-color: #9b59b6;
+  padding: 1.5rem;
+  width: 85%;
+  border-radius: 3px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .uc__subscribe h3 {
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 
 .uc__form {
-    position: relative;
+  position: relative;
 }
 
 .uc__form input {
-    font-family: inherit;
-    outline: none;
-    font-size: 90%;
-    padding: 10px 1rem;
-    border: none;
-    display: block;
-    border-radius: 2px;
+  font-family: inherit;
+  outline: none;
+  font-size: 90%;
+  padding: 10px 1rem;
+  border: none;
+  display: block;
+  border-radius: 2px;
 }
 
 .uc__form .email {
-    width: 100%;
-    background-color: #ecf0f1;
+  width: 100%;
+  background-color: #ecf0f1;
 }
 
 .uc__form .submit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #7a3a95;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: background-color .22s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #7a3a95;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.22s ease;
 }
 
 .uc__form .submit:hover {
-    background-color: #8e44ad;
+  background-color: #8e44ad;
+}
+
+@media screen and (max-width: 990px) {
+  body {
+    background: #692d82;
+  }
+  .uc__wrapper {
+    flex-direction: column;
+  }
+  .uc__art {
+    margin: 1rem 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .uc__form input {
+    font-size: 60%;
+  }
+  .uc__form .submit {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
 }
