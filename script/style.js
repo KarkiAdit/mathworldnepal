@@ -61,17 +61,12 @@ const targetted_videos = document.getElementsByTagName("video");
 var counter = 0;
 
 for (counter = 0; counter < targetted_videos.length; counter++) {
-  const random = document.createElement("video");
-  const random_source = document.createElement("source");
-  random_source.setAttribute("src", actual_sources[counter]);
-  random_source.setAttribute("type", "video/mp4");
-  random.appendChild(random_source);
-  random.addEventListener("load", (event) => {
-    targetted_videos[counter].firstElementChild.setAttribute(
-      "src",
-      actual_sources[counter]
-    );
-    targetted_videos[counter].load();
+  targetted_videos[counter].firstElementChild.setAttribute(
+    "src",
+    actual_sources[counter]
+  );
+  targetted_videos[counter].load();
+  targetted_videos[counter].addEventListener("load", (event) => {
     targetted_videos[counter].play();
   });
 }
