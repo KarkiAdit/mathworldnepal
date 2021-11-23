@@ -21,53 +21,222 @@
     />
     <meta name="author" content="Math World Nepal" />
 
+    <title>Recent</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
     <link
       rel="shortcut icon"
-      href="./images/footer-image.png"
+      href="images/footer-image.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/courses.css" />
-    <title>Recent</title>
+    <script src="script/style.js" defer></script>
   </head>
   <body>
-    <div class="uc__wrapper">
-      <div class="uc__art">
-        <img src="images/under_construction.svg" alt="" />
-      </div>
-      <div class="uc__details">
-        <h1 class="title">Coming Soon!</h1>
-        <h3 class="intro">
-          We are working hard to give you a better experience.
-        </h3>
-        <p class="uc__description">
-          We are working hard on it & the site may go live very soon. We
-          promise, it will be worth the wait!
-        </p>
-        <div class="uc__subscribe">
-          <h3>Get Notified When We Go Live</h3>
-          <div class="uc__form">
-            <form action="#">
-              <input type="email" class="email" placeholder="Email Address.." />
-              <input
-                type="button"
-                class="submit"
-                id="submit"
-                value="Get Notified"
-              />
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-      document.getElementById("submit").addEventListener("click", function () {
-        alert(
-          "We have received you email and hope to notify you very soon. Learn more about us by visiting other pages."
-        );
+    <div id="nav-bar">
+      <span class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </span>
 
-        location.href = "index.html";
-      });
+      <nav class="hidden">
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">Recent</a></li>
+          <li><a href="blogs/blog_index.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" name="search-value" placeholder="Search" />
+        <img
+          src="images/search-icon.svg"
+          alt="search-icon"
+          class="icon search-icon"
+        />
+      </div>
+      <div id="account-login">
+        <button class="secondary-button">Login</button>
+        <button class="primary-button">Sign Up</button>
+      </div>
+      <i class="icon hamburger-icon"></i>
+    </div>
+    <main class="blog-card-container">
+      <article class="blog-card full-width">
+        <div class="thumbnail">
+          <a href="recent/recent1.html"
+            ><img src="images/recent/recent1_image.png" alt=""
+          /></a>
+        </div>
+        <h3>
+          <a href="recent/recent1.html"
+            >MWN's commitment for the International Youth Math Challenge</a
+          >
+        </h3>
+        <p class="blog-para">
+          Have you ever come across a thought that you had that one opportunity
+          to show your mathematical ability? If yes, International Youth Math
+          Challenge (IYMC) has given you the perfect platform to fulfill these
+          inner aspirations. With over ten thousand math enthusiasts from almost
+          hundred countries, IYMC engages you in a fierce, yet friendly,
+          competition worldwide...<br />
+          MWN wants to help students prepare for this event. To make this
+          possible, we are creating contents of topics that are closely related
+          to the syllabus that IYMC tries to cover. Not only will these contents
+          help learners understand the topics better, but also make them
+          confident in solving various math questions...
+        </p>
+        <footer class="author">
+          <address>Aayush Acharya</address>
+          <span>on</span>
+          <time datetime="2021-05-21">November 22, 2021</time>
+        </footer>
+      </article>
+
+      <article class="blog-card full-width">
+        <div class="thumbnail">
+          <a href="recent/recent2.html" alt=""
+            ><img src="../images/blog/blog2_image1.png" alt=""
+          /></a>
+        </div>
+        <h3>
+          <a href="recent/recent2.html" alt=""
+            >Rural tutoring at Bloom Nepal School: An outreach to serve
+            underprivileged students</a
+          >
+        </h3>
+        <p class="blog-para">
+          Isn’t one vast, historic, and mysterious universe isn’t sufficient for
+          you? Well, because it happens, there are others. Among physicists,
+          it’s now no longer controversial. Our universe is, however, one in an
+          unimaginably huge ocean of universes known as the multiverse. If that
+          idea isn’t sufficient to get your head around, physics describes
+          distinctive varieties of the multiverse. The simplest one to recognize
+          is known as the cosmological multiverse. The concept right here is
+          that the universe extended at a mind-boggling pace within a fraction
+          of a 2nd after the huge bang.
+        </p>
+        <footer class="author">
+          <address>Jessica Shrestha</address>
+          <span>on</span>
+          <time datetime="2021-05-21">November 20, 2021</time>
+        </footer>
+      </article>
+
+      <article class="blog-card">
+        <div class="thumbnail">
+          <a href="recent/recent3.html" alt=""
+            ><img src="../images/blog/blog3_image1.png" alt=""
+          /></a>
+        </div>
+        <h3>
+          <a href="recent/recent3.html" alt=""
+            >Rural tutoring at Bloom Nepal School: An outreach to serve
+            underprivileged students</a
+          >
+        </h3>
+        <footer class="author">
+          <address>Jessica Shrestha</address>
+          <span>on</span>
+          <time datetime="2020-06-16">November 20, 2021</time>
+        </footer>
+      </article>
+
+      <article class="blog-card">
+        <div class="thumbnail">
+          <a href="recent/recent4.html" alt=""
+            ><img src="../images/blog/blog4_image1.png" alt=""
+          /></a>
+        </div>
+        <h3>
+          <a href="recent/recent4.html" alt=""
+            >FASTER-THAN-LIGHT COMMUNICATION: IS IT POSSIBLE?</a
+          >
+        </h3>
+        <footer class="author">
+          <address>Ranjan Sharma</address>
+          <span>on</span>
+          <time datetime="2020-06-16">November 1, 2021</time>
+        </footer>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <span class="logo">
+        <img src="../images/logo.png" alt="logo" />
+      </span>
+      <span class="report-message"
+        >Found problem in this page? <a>Report Us</a></span
+      >
+      <nav>
+        <ul class="page-links">
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">Recent</a></li>
+          <li><a href="blogs/blog_index.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/mathWorld.nepal" target="_blank"
+              ><img
+                class="icon facebook"
+                src="images/social-media-icons.svg"
+                alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://discord.gg/4kADpwN3P9" target="_blank"
+              ><img
+                class="icon discord"
+                src="images/social-media-icons.svg"
+                alt="discord"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCyk3jizAOeM7XgHNbGxqNnQ"
+              target="_blank"
+              ><img
+                class="icon youtube"
+                src="images/social-media-icons.svg"
+                alt="youtube"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mathworld.nepal/" target="_blank"
+              ><img
+                class="icon instagram"
+                src="images/social-media-icons.svg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/math-world-nepal/"
+              target="_blank"
+              ><img
+                class="icon linkedin"
+                src="images/social-media-icons.svg"
+                alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <span class="copyright-text"
+        >Copyright &copy; All rights reserved to Math World Nepal</span
+      >
+    </footer>
+    <script>
+      document
+        .getElementsByClassName("blog-para")[0]
+        .addEventListener("click", function () {
+          location.href = "blog-1.html";
+        });
+
+      document
+        .getElementsByClassName("blog-para")[1]
+        .addEventListener("click", function () {
+          location.href = "blog-2.html";
+        });
     </script>
   </body>
 </html>

@@ -19,6 +19,10 @@ article q {
   line-height: 1.8em;
   max-width: 60ch;
 }
+.article-content p a {
+  color: rgb(82, 82, 136);
+  text-decoration: underline;
+}
 article ul,
 article ol {
   list-style-position: inside;
