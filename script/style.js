@@ -51,25 +51,25 @@
   });
 })();
 
-const actual_sources = Array(
-  "images/objective-1.mp4",
-  "images/objective-2.mp4",
-  "images/objective-3.mp4",
-  "images/objective-4.mp4"
-);
-const targetted_videos = document.getElementsByTagName("video");
-var counter = 0;
+// const actual_sources = Array(
+//   "images/objective-1.mp4",
+//   "images/objective-2.mp4",
+//   "images/objective-3.mp4",
+//   "images/objective-4.mp4"
+// );
+// const targetted_videos = document.getElementsByTagName("video");
+// var counter = 0;
 
-for (counter = 0; counter < targetted_videos.length; counter++) {
-  targetted_videos[counter].firstElementChild.setAttribute(
-    "src",
-    actual_sources[counter]
-  );
-  targetted_videos[counter].load();
-  targetted_videos[counter].addEventListener("load", (event) => {
-    targetted_videos[counter].play();
-  });
-}
+// for (counter = 0; counter < targetted_videos.length; counter++) {
+//   targetted_videos[counter].firstElementChild.setAttribute(
+//     "src",
+//     actual_sources[counter]
+//   );
+//   targetted_videos[counter].load();
+//   targetted_videos[counter].addEventListener("load", (event) => {
+//     targetted_videos[counter].play();
+//   });
+// }
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
