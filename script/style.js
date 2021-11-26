@@ -80,14 +80,21 @@ function extract_first_four() {
   }
   return new_string;
 }
-function extract_first_six() {
+function extract_first_seven() {
   new_string = "";
-  for (i = 0; i < 6; i++) {
-    new_string = new_string + page.charAt(i);
+  for (i = 0; i < 7; i++) {
+    if (i == 6) {
+      if (page.charAt(i) == ".") {
+        new_string = new_string + "N";
+      } else {
+        new_string = new_string + "Y";
+      }
+    } else {
+      new_string = new_string + page.charAt(i);
+    }
   }
   return new_string;
 }
-
 var elements = document.getElementsByClassName("logo");
 console.log(page);
 for (counter = 0; counter < elements.length; counter++) {
@@ -96,7 +103,7 @@ for (counter = 0; counter < elements.length; counter++) {
       location.href = "#";
     } else if (
       extract_first_four() == "blog" ||
-      extract_first_six() == "recent"
+      extract_first_seven() == "recentY"
     ) {
       location.href = "../index.html";
     } else {
