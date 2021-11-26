@@ -221,7 +221,7 @@ button.secondary-button:hover,
 }
 .page-footer > .logo > img {
   width: 100%;
-  max-width: 163px;
+  max-width: 160px !important;
 }
 .page-footer > .report-message {
   grid-area: report;
