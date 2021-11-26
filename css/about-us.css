@@ -120,6 +120,7 @@ section.objectives > h1 {
 
 section.objectives-text {
   background-color: var(--bg-color-body);
+  background-image: url(../images/bg__with-dotted.svg);
 }
 .list-objectives {
   width: 100%;
@@ -280,10 +281,6 @@ section.type-2 .container {
     font-size: 1.75rem;
   }
 
-  /* section.header img {
-    position: relative;
-    left: 25vw;
-  } */
   section.header-text,
   section.team-members {
     text-align: center;
