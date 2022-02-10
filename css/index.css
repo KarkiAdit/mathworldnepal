@@ -54,11 +54,10 @@ section.video-introduction {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/bg__with-dotted.svg);
-  /* background-repeat: no-repeat; */
-  /* background-position: bottom; */
+  background-image: url(../images/blue-diamond.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: contain;
-  /* background: url("/images/blue-diamond.svg"); */
 }
 .video-introduction > iframe {
   width: 100%;
