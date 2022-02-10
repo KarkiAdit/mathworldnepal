@@ -64,6 +64,59 @@
     <main class="blog-card-container">
       <article class="blog-card full-width">
         <div class="thumbnail">
+          <a href="blog-10.html"
+            ><img src="../images/blog/blog11_image1.jpg" alt=""
+          /></a>
+        </div>
+        <h3>
+          <a href="blog-11.html"
+            >The asteroid that killed Dinosaurs hit at the worst possible
+            angle</a
+          >
+        </h3>
+        <p class="blog-para">
+          According to new research, the flaming space rock that slammed into
+          Earth and wiped out the dinosaurs struck at the worst possible angle
+          (for the dinosaurs, that is). Under any circumstances, colliding with
+          a massive, fast-moving cosmic projectile would have been disastrous.
+          Researchers recently discovered that this massive space rock also
+          struck the planet at a steep angle, resulting in the “deadliest
+          possible” outcome by releasing far more gas and pulverized rock than
+          it would have with a shallower approach...
+        </p>
+        <footer class="author">
+          <address>Ranjan Sharma</address>
+          <span>on</span>
+          <time datetime="2021-05-21">February 7, 2022</time>
+        </footer>
+      </article>
+      <article class="blog-card full-width">
+        <div class="thumbnail">
+          <a href="blog-10.html"
+            ><img src="../images/blog/blog10_ref.jpg" alt=""
+          /></a>
+        </div>
+        <h3>
+          <a href="blog-10.html">The Big Bang has a lot of flaws!</a>
+        </h3>
+        <p class="blog-para">
+          We start with gravity, electromagnetism, and the weak and strong
+          nuclear forces, which are the four basic forces. Next we see a
+          quark-gluon plasma soup with quarks, leptons, and lepton antiparticles
+          as the main constituents. Hadrons are permitted to develop as the soup
+          cools, and baryons such as our common neutron and proton begin to
+          arise. The soup-universe cools down enough for fusion to occur after 3
+          to 20 minutes of this scenario, resulting in a few light components...
+        </p>
+        <footer class="author">
+          <address>Bibas Basnet</address>
+          <span>on</span>
+          <time datetime="2021-05-21">January 26, 2022</time>
+        </footer>
+      </article>
+
+      <article class="blog-card full-width">
+        <div class="thumbnail">
           <a href="blog-1.html"
             ><img src="../images/blog/blog1_image1.png" alt=""
           /></a>
@@ -82,7 +135,7 @@
           series of numbers formed by adding two numbers before them starting
           with 0 and 1 is called a Fibonacci sequence. And when you draw a
           square with these Fibonacci numbers you get a spiral called
-          logarithmic spiral.
+          logarithmic spiral...
         </p>
         <footer class="author">
           <address>Bardan Dhakal</address>
@@ -107,9 +160,7 @@
           unimaginably huge ocean of universes known as the multiverse. If that
           idea isn’t sufficient to get your head around, physics describes
           distinctive varieties of the multiverse. The simplest one to recognize
-          is known as the cosmological multiverse. The concept right here is
-          that the universe extended at a mind-boggling pace within a fraction
-          of a 2nd after the huge bang.
+          is known as the cosmological multiverse...
         </p>
         <footer class="author">
           <address>Ranjan Sharma</address>
@@ -297,11 +348,21 @@
       document
         .getElementsByClassName("blog-para")[0]
         .addEventListener("click", function () {
-          location.href = "blog-1.html";
+          location.href = "blog-11.html";
         });
 
       document
         .getElementsByClassName("blog-para")[1]
+        .addEventListener("click", function () {
+          location.href = "blog-10.html";
+        });
+      document
+        .getElementsByClassName("blog-para")[2]
+        .addEventListener("click", function () {
+          location.href = "blog-1.html";
+        });
+      document
+        .getElementsByClassName("blog-para")[3]
         .addEventListener("click", function () {
           location.href = "blog-2.html";
         });
